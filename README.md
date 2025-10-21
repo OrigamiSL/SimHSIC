@@ -1,4 +1,4 @@
-# Super-Long Input Sequences for Long-Term Time Series Forecasting with Missing Values
+# Is Meta-learning Effective for Few-shot Hyperspectral Image Classification?
 ![Python 3.11](https://img.shields.io/badge/python-3.11-green.svg?style=plastic)
 ![PyTorch 2.1.0](https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?style=plastic)
 ![CUDA 11.8](https://img.shields.io/badge/cuda-11.8-green.svg?style=plastic)
@@ -37,6 +37,7 @@ pip install -r requirements.txt
 ### Data Preparation
 We follow [SpectralFormer](https://github.com/danfenghong/IEEE_TGRS_SpectralFormer) to prepare the four datasets. The preprocessed IP, UA and SA datasets are already put under the folder `./data`. The preprocessed HT dataset can be obtained in [here](https://mega.nz/file/zdgE2D6S#92HRT93gAKjTHFvKYqf0uuPsmtz6ZnLl6In706lyaqY).
 After putting the downloaded HT dataset under the folder `./data`, you can obtain the folder tree as follows:
+```
 |-SimHSIC
 | |-data
 | | |-IndianPine.mat # IP dataset
