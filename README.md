@@ -47,14 +47,16 @@ After putting the downloaded HT dataset under the folder `./data`, you can obtai
 
 
 ## Usage
-Commands for training and testing SLNet of all datasets are in `./Run.sh`. 
+Commands for training and testing SimHSIC of all datasets are in `./script/Main.sh`. 
 
-More parameter information please refer to `main.py`.
+More parameter information please refer to `main.py` and `run.py`.
 
-We provide a complete command for training and testing SLNet:
+We provide a complete command for training and testing SimHSIC:
 
 ```
-python -u main.py --data <data> --basic_input <input_len>  --pred_len <pred_len> --layer_num <layer_num> --patch_size <patch_size> --bins <bins> --d_model <d_model> --Boundary <Boundary> --learning_rate <learning_rate> --dropout <dropout> --missing_ratio <missing_ratio> --batch_size <batch_size>  --train --train_epochs <train_epochs> <itr> --train --patience <patience> --decay<decay>
+python -u run.py --dataset <dataset> --epoches <dataset> --channel <dataset> --patches <dataset> --s_patches <dataset> --aug_num <dataset> \
+                  --lambdaC <dataset> --sample_num <dataset> --batch_size <dataset> --learning_rate <dataset> --decay_num <dataset>\
+                  --d_model <dataset> --out_dims <dataset> --dropout <dataset>
 ```
 
 Here we provide a more detailed and complete command description for training and testing the model:
