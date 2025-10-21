@@ -54,47 +54,46 @@ More parameter information please refer to `main.py` and `run.py`.
 We provide a complete command for training and testing SimHSIC:
 
 ```
-python -u run.py --dataset <dataset> --epoches <dataset> --channel <dataset> --patches <dataset> --s_patches <dataset> --aug_num <dataset> \
-                  --lambdaC <dataset> --sample_num <dataset> --batch_size <dataset> --learning_rate <dataset> --decay_num <dataset>\
-                  --d_model <dataset> --out_dims <dataset> --dropout <dataset>
+python -u run.py --dataset <dataset> --epoches <epoches> --channel <channel> --patches <patches> --s_patches <s_patches> --aug_num <aug_num> \
+                  --lambdaC <lambdaC> --sample_num <sample_num> --batch_size <batch_size> --learning_rate <learning_rate> --decay_num <decay_num>\
+                  --d_model <d_model> --out_dims <out_dims> --dropout <dropout>
 ```
 
 Here we provide a more detailed and complete command description for training and testing the model:
 
 | Parameter name |                                          Description of parameter                                          |
 |:--------------:|:----------------------------------------------------------------------------------------------------------:|
-|      data      |                                              The dataset name                                              |
-|   root_path    |                                       The root path of the data file                                       |
-|   data_path    |                                             The data file name                                             |
-|  checkpoints   |                                       Location of model checkpoints                                        |
-|   basic_input   |                                           Basic input length                                            |
-|    pred_len    |                                         prediction Length                                         |
-|     enc_in     |                                                 Input variable number                                                |
-|    dec_out     |                                                Output variable number                                             |
-|    d_model     |                                             Hidden dims of model                                             |
-|    layer_num     |                                             Model stage number                                             |
-|   patch_size   |                                Patch size                              |
-| Boundary | Boundary for different patch size|
-| missing_ratio | Missing_ratio|
-|    dropout     |                                                  Dropout                                                   |
-|    num_workers     |                                                  Data loader num workers                                                   |
-|      itr       |                                             Experiments times                                              |
-|  train_epochs  |                                      Train epochs of the second stage                                      |
-|   batch_size   |                         The batch size of training input data                          |
-|   decay   |                         Decay rate of learning rate per epoch                         |
-|    patience    |                                          Early stopping patience                                           |
-| bins | bin num |
-| learning_rate  |                                          Optimizer learning rate                                           |
-| train | whether to train |
+|      data      |                                              dataset to use                                              |
+|  flag_test |                                       testing mark                               |
+|   gpu_id   |                                            gpu id                                        |
+| seed |                                       number of seed                                    |
+|   batch_size  |                                          number of batch size                                           |
+|    test_freq    |                                         number of evaluation                                    |
+|     channel     |                                                 bandwidth                                               |
+|    patches    |                                              number of patches                                            |
+|    s_patches    |                                            number of s patches, which is as same as the number of patches                                            |
+|    aug_num    |                                            number of augmentations                                        |
+|   sample_num |                                K-shot                         |
+| d_model | size of hidden dimension |
+| out_dims | size of output dimension |
+|    dropout     |                                                  Dropout rate                                                   |
+|    epoches     |                                                epoch number                                                 |
+|     learning_rate     |                                             learning rate                                            |
+| gamma |                                     gamma                              |
+|  decay_num  |                       decay_num                        |
+| lambdaC |                                     lambda                                   |
+| temperature | temperature |
+| itr  |                                itration                                 |
+| weight_decay | weight_decay |
 
 
 ## Results
-The experiment parameters of each dataset are formated in the `./Run.sh`. You can refer to these parameters for experiments, and you can also adjust the parameters to obtain better mse results or draw better prediction figures. We present the multivariate forecasting results of the four datasets in Figure 2 (with missing values) and Figure 3 (without missing values).
+The experiment parameters of each dataset are formated in the `./script/Main.sh`. You can refer to these parameters for experiments, and you can also adjust the parameters to obtain better results. We present the OA, AA and Kappa results of the four datasets in Figure 2~5.
 
 <p align="center">
-<img src="./img/result1.jpg" height = "300" alt="" align=center />
+<img src="./img/IP.png" height = "668" weight = "1042" alt="" align=center />
 <br><br>
-<b>Figure 2.</b> Forecasting results with missing values.
+<b>Figure 2.</b> CLASSIFICATION PERFORMANCE (%) ON THE IP DATASET.
 </p>
 
 <p align="center">
