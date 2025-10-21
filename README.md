@@ -5,12 +5,11 @@
 ![License CC BY-NC-SA](https://img.shields.io/badge/license-CC_BY--NC--SA--green.svg?style=plastic)
 
 This is the origin Pytorch implementation of SLNet in the following paper: 
-[Is Meta-learning Effective for Few-shot Hyperspectral Image Classification?] (Accepted by IEEE Transactions on Geoscience and Remote Sensing). The data preprocessing, hyperparameter settings, experimental setups (including ablation studies), training duration, hardware specifications, and inference latency can be found in the manuscript.
-
+[Is Meta-learning Effective for Few-shot Hyperspectral Image Classification?] (Accepted by IEEE Transactions on Geoscience and Remote Sensing). 
 ## Model Architecture
 
 <p align="center">
-<img src="./img/overview.png" height = "480" width = "1550" alt="" align=center />
+<img src="./img/overview.png" height = "640" width = "1550" alt="" align=center />
 <br><br>
 <b>Figure 1.</b> Overview of the proposed SimHSIC model. The architecture includes an embedding layer for spectral feature projection, a backbone for representation
 learning, and a dual-branch head.
