@@ -100,13 +100,13 @@ The experiment parameters of each dataset are formated in the `./script/Main.sh`
 <p align="center">
 <img src="./img/HT.png" height = "636" weight = "1033" alt="" align=center />
 <br><br>
-<b>Figure 3.</b> Classification Performance (%) on the HT Dataset.
+<b>Figure 4.</b> Classification Performance (%) on the HT Dataset.
 </p>
 
 <p align="center">
 <img src="./img/SA.png" height = "636" weight = "1033" alt="" align=center />
 <br><br>
-<b>Figure 3.</b> Classification Performance (%) on the SA Dataset.
+<b>Figure 5.</b> Classification Performance (%) on the SA Dataset.
 </p>
 
 
