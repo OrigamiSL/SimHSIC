@@ -23,14 +23,9 @@ learning, and a dual-branch head.
 - scipy == 1.10.1
 - torch == 2.1.0+cu118
 - scikit-learn == 1.4.2
-- h5py == 3.7.0
 - matplotlib == 3.7.1
 - loguru == 0.7.2
 
-Dependencies can be installed using the following command:
-```bash
-pip install -r requirements.txt
-```
 
 
 ### Data Preparation
