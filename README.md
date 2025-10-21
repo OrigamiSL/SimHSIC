@@ -88,15 +88,26 @@ The experiment parameters of each dataset are formated in the `./script/Main.sh`
 <p align="center">
 <img src="./img/IP.png" height = "668" weight = "1042" alt="" align=center />
 <br><br>
-<b>Figure 2.</b> CLASSIFICATION PERFORMANCE (%) ON THE IP DATASET.
+<b>Figure 2.</b> Classification Performance (%) on the IP Dataset.
 </p>
 
 <p align="center">
-<img src="./img/result2.jpg" height = "300" alt="" align=center />
+<img src="./img/UP.png" height = "447" weight = "1045" alt="" align=center />
 <br><br>
-<b>Figure 3.</b> Forecasting results without missing values.
+<b>Figure 3.</b> Classification Performance (%) on the UP Dataset.
 </p>
 
+<p align="center">
+<img src="./img/HT.png" height = "636" weight = "1033" alt="" align=center />
+<br><br>
+<b>Figure 3.</b> Classification Performance (%) on the HT Dataset.
+</p>
+
+<p align="center">
+<img src="./img/SA.png" height = "636" weight = "1033" alt="" align=center />
+<br><br>
+<b>Figure 3.</b> Classification Performance (%) on the SA Dataset.
+</p>
 
 
 ## Contact
